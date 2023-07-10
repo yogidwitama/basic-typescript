@@ -1,0 +1,6 @@
+
+to run = npm test 
+
+to compile and test = npx tsc 
+
+to nodemon in typescript 🤡 = npx tsc --watch
