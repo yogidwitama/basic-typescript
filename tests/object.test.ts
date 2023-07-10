@@ -1,6 +1,6 @@
 describe('Object', () => {
     it("Should support in type script", () => {
-        const person:{id:string, name:string}={
+        const person:{id:string, name:string, hobbies?:string[]}={
             id:"1",
             name:"yogi"
         };
