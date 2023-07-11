@@ -1,7 +1,7 @@
 
 to run = npm test 
 
-to run selected file  = npm tets .\nameFile.ts
+to run selected file  = npm test .\nameFile.ts
 
 to compile and test = npx tsc 
 

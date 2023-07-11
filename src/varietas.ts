@@ -6,5 +6,5 @@ export interface Varietas {
 
 
 export interface Manager extends Varietas{
-    // numberOfVarietas 
+    numberOfVarietas: number;
 }
