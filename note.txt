@@ -1,6 +1,8 @@
 
 to run = npm test 
 
+to run selected file  = npm tets .\nameFile.ts
+
 to compile and test = npx tsc 
 
 to nodemon in typescript 🤡 = npx tsc --watch

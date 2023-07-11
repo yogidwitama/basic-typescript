@@ -5,7 +5,7 @@ describe('Data Type', function () {
         let balance = 100000;
         let isVip = true;
         console.info(name);
-        console.info(Number);
+        console.info(balance);
         console.info(isVip);
         // code bawah akan error
         // name = 100;
