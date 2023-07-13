@@ -1,4 +1,5 @@
 import { SellerReadOnly } from "../src/seller-forreadonly";
+import { Person } from "../src/person";
 
 describe('Interface Read Only Funtion', () => {
     it('should support in typescript', ()=>{
@@ -22,10 +23,6 @@ describe('Interface Read Only Funtion', () => {
         expect(add(2,2)).toBe(4);
     });
     it('should support function in interface',()=>{
-        interface Person{
-            name: string;
-            sayHello(name:string):string;
-        };
         const Person: Person ={
             name:"yg",
             sayHello(name:string):string {
@@ -34,4 +31,29 @@ describe('Interface Read Only Funtion', () => {
         }
         console.info(Person.sayHello("YUGIOH"))
     });
+    it('should support intersection types',()=>{
+        interface Hasname{
+            name: string
+        }
+        interface HasId{
+            id: string
+        }
+        type Domain = HasId & Hasname;
+        const domain :Domain ={
+            name:"yg",
+            id:"1",
+        }
+    });
+    it('should support types assertions',()=>{
+        const person: any ={
+            name :"yg",
+            age:25
+        };
+        const person2:Person =person as Person;
+        // person2.sayHello("budi");
+
+        console.info(person2)
+
+    })
+
 });

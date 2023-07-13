@@ -34,4 +34,17 @@ describe('Interface Read Only Funtion', () => {
         }
         console.info(Person.sayHello("YUGIOH"))
     });
+    it('should support intersection types',()=>{
+        interface Hasname{
+            name: string
+        }
+        interface HasId{
+            id: string
+        }
+        type Domain = HasId & Hasname;
+        const domain :Domain ={
+            name:"yg",
+            id:"1",
+        }
+    })
 });

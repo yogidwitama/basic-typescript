@@ -16,20 +16,21 @@ describe('Interface Read Only Funtion', () => {
         };
         expect(add(2, 2)).toBe(4);
     });
-    it('Should support extend interface', () => {
-        const employee = {
+    it('should support function in interface', () => {
+        ;
+        const Person = {
+            name: "yg",
+            sayHello(name) {
+                return `Hello ${name}, my name is ${this.name}`;
+            },
+        };
+        console.info(Person.sayHello("YUGIOH"));
+    });
+    it('should support intersection types', () => {
+        const domain = {
+            name: "yg",
             id: "1",
-            varietas: "yogi",
-            division: "IT"
         };
-        console.info(employee);
-        const manager = {
-            id: "2",
-            varietas: "Yogi",
-            division: "Drone",
-            numberOfVarietas: 10,
-        };
-        console.info(manager);
     });
 });
 export {};

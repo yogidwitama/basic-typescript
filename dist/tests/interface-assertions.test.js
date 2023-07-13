@@ -17,7 +17,6 @@ describe('Interface Read Only Funtion', () => {
         expect(add(2, 2)).toBe(4);
     });
     it('should support function in interface', () => {
-        ;
         const Person = {
             name: "yg",
             sayHello(name) {
@@ -25,6 +24,21 @@ describe('Interface Read Only Funtion', () => {
             },
         };
         console.info(Person.sayHello("YUGIOH"));
+    });
+    it('should support intersection types', () => {
+        const domain = {
+            name: "yg",
+            id: "1",
+        };
+    });
+    it('should support types assertions', () => {
+        const person = {
+            name: "yg",
+            age: 25
+        };
+        const person2 = person;
+        // person2.sayHello("budi");
+        console.info(person2);
     });
 });
 export {};
