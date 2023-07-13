@@ -10,6 +10,6 @@ describe('Function', () => {
         };
         printHello("yg");
         
-    
     })
+    
 });
